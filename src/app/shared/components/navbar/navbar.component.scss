@@ -1,0 +1,9 @@
+@import "../../styles/mixins";
+
+.nav-container {
+  font-family: 'Helvetica', sans-serif;
+  @include flexible;
+  @apply fixed w-full border-b-2 shadow-xl bg-white py-2 px-4;
+  //background-color: #FF3333;
+
+}

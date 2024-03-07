@@ -1,3 +1,12 @@
-@mixin card {
-  @apply m-auto border-2 h-14 p-4 text-center text-white flex justify-center items-center rounded-md hover:text-black hover:bg-white
+@mixin flexible {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin border-radius($radius) {        // Префиксы для:
+  -webkit-border-radius: $radius;    // Chrome и Safari
+  -moz-border-radius: $radius;    // Firefox
+  -ms-border-radius: $radius;    // Internet Explorer
+  -o-border-radius: $radius;    // Opera
+  border-radius: $radius;    // Стандартный CSS
 }
