@@ -1,0 +1,9 @@
+<div
+  class="bg-black/60 w-full h-full fixed top-0 left-0"
+  (click)="modalService.close()"
+>
+  <div class="absolute top-40 left-1/2 -translate-x-1/2">
+    <img ngSrc="assets/images/colors/{{modalService.image$ | async}}-big.jpg" alt="{{modalService.image$ | async}}" height="500" width="750">
+  </div>
+
+</div>
