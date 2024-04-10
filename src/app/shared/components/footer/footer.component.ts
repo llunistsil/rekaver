@@ -15,10 +15,10 @@ import {NgForOf} from "@angular/common";
   viewProviders:[provideIcons({heroPhone,heroEnvelope})]
 })
 export class FooterComponent {
-  email = "xxxxxxxxxxxxxxx";
+  email = "suvorovka04@gmail.com";
   phoneNumbers:{text:string,link:string}[] = [
-    {text:"+XXXXXXXXXX",link:"+XXXXXXXXX"},
-    {text:"+XXXXXXXXXX",link:"+XXXXXXXXX"}
+    {text:"+7-962-010-88-77",link:"+79620108877"},
+    {text:"+7-903-444-55-10",link:"+79034445510"}
   ];
   info = "Большой выбор качественной и недорогой кровли для вашей стройки.\n" +
     "Работаем напрямую с производителями. Гарантия низкой цены. Доставка по всем городам КМВ.\n" +

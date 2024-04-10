@@ -1,0 +1,16 @@
+<div class="container grid grid-cols-3 gap-3 p-0">
+  <div *ngFor="let category of categories" (mouseenter)="mouseEnter(category)" (mouseleave)="mouseLeave(category)" class="h-[20vw] relative rounded-sm">
+    <div id="{{category.name}}"
+         class="absolute -z-10
+          top-0 left-0 right-0 bottom-0
+          text-white rounded-sm uppercase text-[1.2vw] bg-neutral-800/70
+           flex flex-col justify-center items-center ase-in-out duration-300">
+      <svg class="w-1/6 h-1/6 mb-4">
+        <use [attr.xlink:href]="category.icon" class="fill-neutral-400"></use>
+      </svg>
+      {{category.name}}
+    </div>
+    <img ngSrc="{{category.image}}" alt="{{category.title}}" class="rounded-sm object-fill absolute -z-30" fill="">
+  </div>
+</div>
+
