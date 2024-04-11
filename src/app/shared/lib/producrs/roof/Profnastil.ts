@@ -1,0 +1,46 @@
+import {IProduct} from "../../products-info";
+
+export const forProfnastil:IProduct[] = [
+  {
+    name:"C10R",
+    image:"",
+    examples:[],
+    description:"",
+    parameters:""
+  },
+  {
+    name:"C20R",
+    image:"",
+    examples:[],
+    description:"",
+    parameters:""
+  },
+  {
+    name:"C21R",
+    image:"",
+    examples:[],
+    description:"",
+    parameters:""
+  },
+  {
+    name:"HC35R",
+    image:"",
+    examples:[],
+    description:"",
+    parameters:""
+  },
+  {
+    name:"60R",
+    image:"",
+    examples:[],
+    description:"",
+    parameters:""
+  },
+  {
+    name:"H75R",
+    image:"",
+    examples:[],
+    description:"",
+    parameters:""
+  }
+]

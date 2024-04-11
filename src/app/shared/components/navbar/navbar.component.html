@@ -12,35 +12,74 @@
       </a>
     </div>
     <div
-      class="w-2/5 h-10 border-2 text-black flex justify-between rounded-md ">
+      class="w-2/5 h-10 border-2 text-black flex justify-between rounded-md">
       <input class="w-full text-black m-2 focus:outline-none" type="text" name="product"
              placeholder="Быстрый поиск товара или категории"/>
-      <button class="bg-red-500 m-1 rounded-md text-white float-end text-md w-1/5 hover:opacity-70">
-        Поиск
+      <button mat-flat-button color="warn" class="w-[100px]">
+        <span  class="text-white text-md">
+          Поиск
+        </span>
       </button>
     </div>
     <div class="flex justify items-center">
-      <div
-        class="border-2 w-32 h-10 text-center flex justify-center items-center rounded-md hover:text-black hover:bg-white hover:border-black">
-        <ng-icon name="heroSquares2x2Solid" class="mr-1"/>
-        <div class="text-m font-bold">
-          Каталог
+      <button mat-stroked-button>
+        <div
+          class="text-center flex justify-center items-center">
+          <ng-icon name="heroSquares2x2Solid" class="mr-1"/>
+          <div class="text-m font-bold">
+            Каталог
+          </div>
         </div>
-      </div>
-      <div
-        class="ml-2 w-32 border-2 h-10 text-center flex justify-center items-center rounded-md hover:text-black hover:bg-white hover:border-black">
-        <ng-icon name="heroPhotoSolid" class=" mr-1"/>
-        <div class="text-m font-bold">
-          Галерея
+      </button>
+
+      <button mat-stroked-button>
+        <div
+          class="text-center flex justify-center items-center">
+          <ng-icon name="heroPhotoSolid" class=" mr-1"/>
+          <div class="text-m font-bold">
+            Галерея
+          </div>
         </div>
-      </div>
-      <div
-        class="ml-2 w-32 border-2 h-10 text-center text-red-600 bg-white flex justify-center items-center rounded-md hover:text-black hover:bg-white hover:border-black">
-        <ng-icon name="heroPhoneSolid" class=" mr-1"/>
-        <div class="text-m font-bold">
-          Контакты
+      </button>
+      <button mat-stroked-button [matMenuTriggerFor]="beforeMenu" >
+        <div class="text-center text-red-600 flex justify-center items-center rounded-md">
+          <ng-icon name="heroPhoneSolid" class=" mr-1"/>
+          <div class="text-m font-bold">
+            Контакты
+          </div>
         </div>
-      </div>
+      </button>
+      <mat-menu #beforeMenu="matMenu" xPosition="before" class="mt-3">
+        <button mat-menu-item><a  type="tel" href="tel:89620108877">
+          <div class="flex flex-row">
+            <div>
+              <ng-icon name="heroPhone" class="align-middle text-red-500 mr-1"/>
+            </div>
+            <div>
+              +7-962-010-88-77
+            </div>
+          </div>
+        </a>
+        </button>
+        <button mat-menu-item>
+          <a  type="tel" href="tel:89034445510">
+          <div class="flex flex-row">
+            <div>
+              <ng-icon name="heroPhone" class="align-middle text-red-500 mr-1"/>
+            </div>
+            <div>
+              +7-903-444-55-10
+            </div>
+          </div>
+        </a>
+        </button>
+        <button mat-menu-item>
+          <a type="tel" href="mailto:suvorovka04@gmail.com">
+            <ng-icon name="heroEnvelope" class="align-middle text-red-500 mr-1"/>
+            {{email}}
+          </a>
+        </button>
+      </mat-menu>
     </div>
   </nav>
 </header>

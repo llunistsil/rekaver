@@ -11,14 +11,12 @@ export interface IProduct{
   description:string,
   parameters:string,
 }
-export const productsForMetal:IProduct[] =  [
-  {
-    name:"Профнастил",
-    image:"",
-    examples:[],
-    description:"",
-    parameters:""
-  }
-]
+
+
+
+
+
+
+
 
 
