@@ -1,7 +1,7 @@
 import {Routes} from '@angular/router';
 import {HomeComponent} from "./pages/home/home.component";
 import {CategoryComponent} from "./pages/category/category.component";
-import {categoryResolver} from "./shared/services/category.resolver";
+import {categoryResolver} from "./shared/services/category/category.resolver";
 
 export const routes: Routes = [
   {
